@@ -7,6 +7,7 @@ const userRoutes = require('./route/user');
 
 app.use(express.json());
 connectDB();
+
 app.use('/api', userRoutes);
 
 const port = process.env.PORT || 8000;
