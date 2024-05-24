@@ -2,8 +2,7 @@ const async = require('async');
 const userModel = require('../model/user');
 const logger = require('../logger/logger');
 
-
-
+console.log('object :>> ');
 exports.createUser = function (req, res) {
     logger.info(`Create user API initiated. body: ${JSON.stringify(req.body)}`)
     const { userId } = req.body;
